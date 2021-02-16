@@ -1,0 +1,207 @@
+
+h1 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    color:$color-darken;
+}
+.fw700 {
+    font-weight: 700;
+}
+.fw500 {
+    font-weight: 500;
+}
+.main__text {
+    padding-bottom: 50px;
+}
+.main__img {
+    width: 100%;
+    height: 100%;
+}
+.main__btn {
+    position: relative;
+    font-weight: 700;
+    color: white;
+    padding: 17.5px 78px;
+    background-color: #F53838;
+    border-radius: 10px;
+    //box-shadow: 0 25px 35px rgba(245, 56, 56, 0.35);
+  
+}
+.main__btn::before {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background: rgba(245, 56, 56, 0.35);
+    filter: blur(10px);
+}
+.main__btn::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 25px 35px rgba(245, 56, 56, 0.35);
+    
+}
+.main__info {
+    margin-top: 70px;
+    height: 200px;
+    box-shadow:-25px -25px 40px rgb(246, 246, 246),
+    25px 40px 40px rgb(246, 246, 246);
+
+    .main__block-img {
+        position: relative;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+    }
+    .main__block-svg1 {
+        background: #FFECEC url('../img/user-svg.svg') no-repeat center center;
+    }
+    .main__block-svg2 {
+        background: #FFECEC url('../img/location-svg.svg') no-repeat center center;
+    }
+    .main__block-svg3 {
+        background: #FFECEC url('../img/servers-svg.svg') no-repeat center center;
+    }
+    p {
+        padding: 0;
+    }
+    .main__info-block {
+        border-right: 2px solid #EEEFF2;
+        margin-top: 70px;
+    }
+    .block__text-title {
+        margin: 0;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .block__text-text {
+        margin: 0;
+        font-size: 20px;
+
+    }
+    .main__block-text {
+        padding-left: 40px;
+        line-height: 30px;
+    }
+}
+.main__features {
+    padding-top: 95px;
+    padding-bottom: 100px;
+    .features__img {
+        width:100%;
+    };
+
+    .features__right {
+        margin-left: 70px;
+        .features__title {
+            margin-top: 50px;
+            color:$color-darken;
+            padding-bottom: 20px;
+        }
+        .features__text {
+            padding-bottom: 20px;
+        }
+        .features__check-img {
+            margin-right: 10px;
+            width: 24px;
+            height: 25px;
+            background: url('../img/icon1.svg') no-repeat center center;
+        }
+    }
+    
+}
+.main__first-row {
+    display: flex;
+    
+}
+@media screen and (max-width: 1200px) {
+    .main__start-right {
+        display: flex;
+        align-items: center;
+        img {
+            height: 80%;
+        }
+    }
+  
+    
+}
+@media screen and (max-width: 992px) {
+    
+    .main__first-row {
+        flex-direction: column-reverse;
+    }
+    .main__features {
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+    }
+   
+}
+@media screen and (max-width: 767px) {
+    .main__features {
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+    .main__first-row {
+        .main__title {
+            font-size: 28px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        .main__text {
+            padding-bottom: 20px;
+        }
+        .main__img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .main__btn {
+            width: 100%;
+        }
+    }
+    .main__info {
+        height: 100px;
+        .main__block-img {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        .main__info-block {
+            display: flex;
+            flex-direction: column;
+            border: none;
+            margin-top: 10px;
+            align-items: center;
+        }
+        .main__block-text {
+            padding-left: 10px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .block__text-title {
+            font-size: 18px;
+            text-align: center;
+        }
+        .block__text-text {
+            font-size: 14px;
+        }
+    }
+    .main__features {
+        .features__right {
+            margin-left: 10px;
+        }
+        .features__title {
+            font-size: 28px;
+        }
+    }
+}
